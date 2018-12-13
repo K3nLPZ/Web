@@ -1,0 +1,188 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- External CSS example <link rel="stylesheet" type="text/css" media="screen" href="<external URL>/main.css" />
+    <script src="main.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="shared.css" />
+           
+
+    <style>
+        h2 { font-size: 2.5em }
+
+        P {
+            font-family: 'Courier New'; font-size: 32px; 
+        }
+
+        /*combined selector*/
+
+        ol li {
+            color: red;
+        }
+
+        ul li {
+            background-color: cornflowerblue;
+            color: blue;
+        }
+
+        /*p-seudo class*/
+        ul li:nth-child(2){
+            text-decoration:underline;
+            font-size: 1.5em
+        }
+
+
+        .specialname{
+            background-color: forestgreen;
+        }
+
+        .highlight{
+            background: yellow;
+        }
+
+    </style>
+</head>
+<body style="background-color: #cefffb">
+
+    <h2>Articles and Sections</h2>
+
+    <article style="background-color: honeydew"> 
+        
+
+        <section style="color: #ef8632; background-color: #ffd9ff">
+            Section1 <i>this is italic</i> and <u>this is underline</u>
+        </section>
+
+        <section>
+            <p>
+                Sections 2 <b>this is bold text</b>
+            </p>
+        </section>
+    </article>
+
+    <h2>Tables</h2>
+    <table border="0" style="background-color: #24978d; border: 4mm ridge rgb(170, 50, 220, .6); text-align: left">
+ 
+      <thead>
+
+        <caption>Table Title</caption>
+        <tr>
+
+            <td><b>Column 0</b></td>
+
+            <td>
+                Column 1
+            </td>
+
+            <td>
+                Column 2
+            </td>
+        </tr>
+      </thead>
+      <tbody>
+          <!-- td is related to the columns, tr is the reference to rows-->
+          
+          <!--row0-->
+          <tr>
+              <td>
+                  <div>
+                        row 0, column0
+                        😃
+                  </div>
+              </td>
+                
+                <td>row 0, column1 😋</td>
+                <td>row 0, column2 ⭐</td>
+
+          </tr>
+
+          <!--row1-->
+
+          <tr>
+                <td>row 1, column0 🍀</td>
+                <td>row 1, column1 🎅</td>
+                <td class="highlight">row 1, column2 🎄</td> 
+
+          </tr>
+      </tbody>
+  </table>  
+  <h2 id="specialname">Lists
+    
+  </h2>
+
+  <!--Unordered List-->
+  <ul style="background-color: 	#a4e46b; border: 15px dashed rgb(170,50,220, .6);">
+        <li>Number 1</li>
+        <li>Number </li>
+  </ul>
+
+  <!--Ordered List-->
+  <ol>
+      <li>Number 2</li>
+      <li>Number 2</li>
+  </ol>
+
+  <h2>Controls</h2>
+    
+<div>
+       <button value="button">Click me!</button>  
+
+       <br />
+
+      <h3> 
+          Drop-down
+        </h3>
+        
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select> 
+
+        <br />
+
+        <label>password</label>
+
+        <input type="password" value="123"/>
+        
+        <br />
+
+        <input type="number" placeholder="123" />
+
+        <br />
+
+        <h3>Radio Buttons</h3>
+
+        <input type="radio" name="animals" value="cats">cats</input>
+        <input type="radio" name="animals" value="dogs">dogs</input>
+
+        <label>Other:</label>
+        <input type="text" />
+
+        <br>
+
+        <h3>
+         Checkboxes
+        </h3>
+
+        <br>
+
+        <input type="checkbox">apples</input>
+        <input type="checkbox">grapes</input>
+       
+</div>
+
+<p class="highlight">
+    This is a new text
+</p>
+
+<footer>
+    <hr />
+    Footer Page
+</footer>
+    
+</body>
+</html>
