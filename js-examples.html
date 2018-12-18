@@ -25,9 +25,35 @@ console.debug("debug message");
 console.error("error message");
 console.info("just information");
 
+ try {
+        // Everything is fine
+        throw "This is unexpected";
 
+catch (ex)
+     {
+        // but if fails
+        console.error(ex);
+    }
+   function sayHello() {
+    alert('You hit!')
+   }
+
+
+ function askSomething() {
+       var input= prompt("Say something");
+       console.log(input);
+
+// create an h3, then give it a text
+var text= document.createElement("h3");
+       text.innerText=input; 
+       document.getElementById("dynamicSection").appendChild(text);
+   }  ==$0     
     
     </script>
     
+    <section id="dynamic section"> ==$0
+    <button id="askButton" onclick="askSomething()">Ask something </button>
+    <button id="hitButton" onclick="sayHello">Hit me</button>
+    </section>
 </body>
 </html>
